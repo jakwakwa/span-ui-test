@@ -3,41 +3,46 @@
   height: 60px;
   background: #7223FF;
 
-  &-container {
+  &__container {
     padding-left: 10px;
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: center;
     height: 60px;
     max-width: 1400px;
     margin: 0 auto;
   }
-  &-title {
+
+  &__title {
+
     h1 {
       margin: 0;
       padding: 0;
       line-height: 1;
-      font-family: 'Montserrat';
+      font-family: "Montserrat", sans-serif;
       color: #fff;
       font-size: 18px;
     }
   }
-  &-buttons {
+
+  &__buttons {
+
     button {
       border: 2px solid #fff;
-      width: 100px;
-      height: 35px;
+      width: 70px;
+      height: 30px;
       background: #7223FF;
       font-size: 11px;
-      font-family: "Montserrat";
+      font-family: "Montserrat", sans-serif;
     }
+
     .current-btn {
       color: #7223FF;
       background: #fff;
       border-top-left-radius: 34px;
       border-bottom-left-radius: 34px;
     }
+
     .past-btn {
       color: #fff;
       border-top-right-radius: 34px;
@@ -49,7 +54,6 @@
 .push {
   margin-left: auto;
 }
-
 
 .hamburger {
   display: block;
@@ -65,9 +69,7 @@
   outline: none;
   background: none;
   border: 0;
-  // margin-left: 800px;
 }
-
 
 .hamburger span {
   display: block;
@@ -102,40 +104,26 @@
 @media only screen and (min-width: 1050px) {
 
   .dashboard {
-    width: 100%;
     height: 100px;
-    background: #7223FF;
 
-    &-container {
-      padding-left: 10px;
+    &__container {
       height: 100px;
-      max-width: 1400px;
     }
-    &-title {
+
+    &__title {
+
       h1 {
-        color: #fff;
         font-size: 30px;
       }
     }
-    &-buttons {
+
+    &__buttons {
+
       button {
-        border: 2px solid #fff;
         width: 150px;
         height: 50px;
-        background: #7223FF;
         font-size: 18px;
-        font-family: "Montserrat";
-      }
-      .current-btn {
-        color: #7223FF;
-        background: #fff;
-        border-top-left-radius: 34px;
-        border-bottom-left-radius: 34px;
-      }
-      .past-btn {
-        color: #fff;
-        border-top-right-radius: 34px;
-        border-bottom-right-radius: 34px;
+        font-family: "Montserrat", sans-serif;
       }
     }
   }
