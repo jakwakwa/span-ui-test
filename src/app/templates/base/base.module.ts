@@ -33,4 +33,5 @@ const routes: Routes = [
   ],
   providers: []
 })
+
 export class BaseModule { }
