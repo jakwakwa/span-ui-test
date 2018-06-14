@@ -7,12 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 
 export class ProjectsComponent {
+
   progress: any;
 
   @Input()
   cards: any[];
 
-  alta = 'assets/img/alta-logo.png';
   calendar = 'assets/img/calendar-icon.svg';
   envelope = 'assets/img/envelope-icon.svg';
 
@@ -29,9 +29,4 @@ export class ProjectsComponent {
         }]
     };
   }
-
-
-
-
-
 }
