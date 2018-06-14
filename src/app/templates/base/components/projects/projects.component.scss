@@ -49,68 +49,67 @@
 .push {
   margin-left: auto;
 }
-
+// cards for mobile
 .cards {
   padding: 10px;
   padding-bottom: 50px;
   &__container {
     display: flex;
-    // justify-content: space-between;
+    flex-direction: column;
     background: #fff;
     width: 100%;
-    height: 175px;
-    max-width: 1400px;
+    height: auto;
     margin: 0 auto;
-    margin-top: 20px;
-
+    margin-top: 10px;
   }
   &__box {
-    padding: 20px;
+    padding: 10px;
     &--left {
-      width: 20%;
+      width: 100%;
     }
     &--twoCol {
       display: flex;
-      width: 60%;
+      width: 100%;
     }
     &--right {
-      width: 20%;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
     }
   }
-  // .two-col {
-  //   display: flex;
-  // }
   &__logo {
-    width: 100%;
     max-width: 170px;
-    // height: 125px;
   }
   .dateBox {
     border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
   }
   &__date {
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 14px;
     color: #7223FF;
   }
   &__title,
   &__amount {
     font-family: "Montserrat";
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700;
     margin: 0;
     padding: 0;
   }
+  &__amount {
+    margin-bottom: 10px;
+  }
   &__description {
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 14px;
     margin: 0;
     margin-top: 10px;
     padding: 0;
   }
   &__time {
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
   }
   &__notifications {
@@ -118,10 +117,12 @@
   }
   &__progress {
     font-family: 'Roboto';
-    font-size: 16px;
-    border-top: 1px solid #E2E2E2;
-    border-bottom: 1px solid #E2E2E2;
+    font-size: 14px;
     padding: 10px;
+    margin: 0;
+    height: 38px;
+    margin-left: 10px;
+    margin-top: 20px;
   }
   &__panel {
     border-top: 1px solid #E2E2E2;
@@ -129,12 +130,16 @@
   }
   &__messages,
   &__date {
+    font-size: 14px;
     position: relative;
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 25px;
     padding: 0;
+  }
+  .progress-span {
+    margin-top: -15px;
   }
   .icon {
     position: absolute;
@@ -145,3 +150,74 @@
   }
 }
 
+@media only screen and (min-width: 850px) {
+  .cards {
+    padding: 20px;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      height: 175px;
+      max-width: 1400px;
+      margin-top: 30px;
+    }
+    &__box {
+      padding: 20px;
+      &--left {
+        width: 20%;
+      }
+      &--twoCol {
+        width: 60%;
+      }
+      &--right {
+        flex-direction: column;
+        width: 20%;
+      }
+    }
+    &__logo {
+      width: 100%;
+    }
+    .dateBox {
+      border-bottom: none;
+    }
+    &__date {
+      font-size: 16px;
+    }
+    &__details {
+      border-left: 1px solid #E2E2E2;
+      padding-left: 10px;
+    }
+    &__title,
+    &__amount {
+      font-size: 30px;
+    }
+    &__description {
+      font-size: 20px;
+    }
+    &__time {
+      font-size: 16px;
+    }
+    &__notifications {
+      width: 200px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #E2E2E2;
+      border-left: 1px solid #E2E2E2;
+    }
+    &__progress {
+      font-size: 16px;
+      margin-top: 10px;
+      height: auto;
+      margin-left: 0;
+      text-align: center;
+      border-top: 1px solid #E2E2E2;
+      border-bottom: 1px solid #E2E2E2;
+    }
+    &__messages,
+    &__date {
+      font-size: 16px;
+    }
+    .progress-span {
+      margin-top: -15px;
+    }
+  }
+}

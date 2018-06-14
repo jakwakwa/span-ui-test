@@ -16,26 +16,28 @@
       <img [src]="alta" class="cards__logo" alt="logo">
       <div class="dateBox">
         <p class="cards__date">
-          <img class="icon" [src]="calendar" alt="">Mar 1 - May 30</p>
+          <img class="icon" [src]="calendar" alt="">{{ card.startDate | date: 'MMMM d' }} - {{ card.endDate | date: 'MMMM d' }}</p>
       </div>
     </div>
     <div class="cards__box cards__box--twoCol">
       <div class="cards__details">
-        <h3 class="cards__title">Alta Motors</h3>
-        <p class="cards__description">Bike Catalog, 2018</p>
-        <p class="cards__time">3 Weeks Left</p>
+        <h3 class="cards__title">{{ card.customer }}</h3>
+        <p class="cards__description">{{ card.summary }}</p>
+        <p class="cards__time">{{ card.daysLeft }} Days Left</p>
       </div>
       <div class="cards__notifications push">
-        <p class="cards__amount">$2,350</p>
-        <div class="cards__panel">
+        <p class="cards__amount">${{ card.cost }}</p>
+        <div *ngIf="card.newMessage" class="cards__panel">
           <p class="cards__messages">
             <img class="icon" [src]="envelope" alt="">New Message</p>
         </div>
       </div>
     </div>
     <div class="cards__box cards__box--right push">
-      <span>Circle Graph</span>
-      <p class="cards__progress">5 Tasks Complete</p>
+      <span class="progress-span">
+        <p-chart width="80" height="100" type="doughnut" [data]="progress"></p-chart>
+      </span>
+      <p class="cards__progress">{{ card.tasksLeft }}/{{ card.tasksTotal }} Tasks to Do</p>
     </div>
   </div>
 </div>

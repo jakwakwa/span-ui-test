@@ -1,4 +1,4 @@
 <app-header></app-header>
 <app-dashboard (toggle)="handleToggle($event)"></app-dashboard>
 <app-menu [@slideInOut]="menuState"></app-menu>
-<app-projects></app-projects>
+<app-projects [cards]="projects"></app-projects>
