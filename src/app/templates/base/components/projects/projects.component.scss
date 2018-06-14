@@ -1,0 +1,147 @@
+.projects {
+  width: 100%;
+  height: 60px;
+
+  &-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+  }
+  &-title {
+    h2 {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-family: 'Montserrat';
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  &-payments {
+    p {
+      text-align: right;
+      font-family: "Montserrat";
+      line-height: 1.4;
+      margin: 0;
+    }
+    .title {
+      color: #fff;
+      border-top-left-radius: 34px;
+      border-bottom-left-radius: 34px;
+      font-size: 11px;
+    }
+    .amount {
+      color: #fff;
+      border-top-right-radius: 34px;
+      border-bottom-right-radius: 34px;
+      font-size: 18px;
+    }
+  }
+}
+
+.push {
+  margin-left: auto;
+}
+
+.cards {
+  padding: 10px;
+  padding-bottom: 50px;
+  &__container {
+    display: flex;
+    // justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    height: 175px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+  }
+  &__box {
+    padding: 20px;
+    &--left {
+      width: 20%;
+    }
+    &--twoCol {
+      display: flex;
+      width: 60%;
+    }
+    &--right {
+      width: 20%;
+    }
+  }
+  // .two-col {
+  //   display: flex;
+  // }
+  &__logo {
+    width: 100%;
+    max-width: 170px;
+    // height: 125px;
+  }
+  .dateBox {
+    border-top: 1px solid #E2E2E2;
+  }
+  &__date {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #7223FF;
+  }
+  &__title,
+  &__amount {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  &__description {
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+  }
+  &__time {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__notifications {
+    width: 200px;
+  }
+  &__progress {
+    font-family: 'Roboto';
+    font-size: 16px;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 10px;
+  }
+  &__panel {
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+  }
+  &__messages,
+  &__date {
+    position: relative;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    padding: 0;
+  }
+  .icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -22px;
+    top: 1px;
+  }
+}
+

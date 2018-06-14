@@ -10,10 +10,13 @@
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background: #fff;
   -webkit-font-smoothing: antialiased;
-  color: #545e6f;
+  color: #535572;
+}
+
+body {
+  background: #535572;
 }
