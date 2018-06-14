@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['menu.component.scss']
 })
 
-export class MenuComponent { }
+export class MenuComponent {
+
+  profileImg = 'assets/img/profile-img.jpg';
+
+}

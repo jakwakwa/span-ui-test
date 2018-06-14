@@ -1,8 +1,25 @@
-<ul>
-  <li>Menu Item</li>
-  <li>Menu Item</li>
-  <li>Menu Item</li>
-  <li>Menu Item</li>
-  <li>Menu Item</li>
-  <li>Menu Item</li>
+<div class="profile">
+  <div class="profile__img">
+    <img [src]="profileImg" alt="">
+  </div>
+  <h2 class="profile__title">John Doe</h2>
+  <p class="profile__edit">Edit Profile</p>
+</div>
+<ul class="nav">
+  <li class="nav__item">Dashboard</li>
+  <li class="nav__item">Products</li>
+  <li class="nav__item">Projects</li>
+  <ul class="nav__nested">
+    <li class="nav__item--nested">My Projects
+      <span>4</span>
+    </li>
+    <li class="nav__item--nested">Messages
+      <span>2</span>
+    </li>
+    <li class="nav__item--nested">Payments</li>
+    <li class="nav__item--nested">Reporting</li>
+  </ul>
+  <li class="nav__item">Rewards</li>
+  <li class="nav__item">Analytics</li>
+  <li class="nav__item">Advertisers</li>
 </ul>

@@ -13,7 +13,7 @@
 <div class="cards">
   <div *ngFor="let card of cards" class="cards__container">
     <div class="cards__box cards__box--left">
-      <img [src]="alta" class="cards__logo" alt="logo">
+      <img [src]="card.logo" class="cards__logo" alt="logo">
       <div class="dateBox">
         <p class="cards__date">
           <img class="icon" [src]="calendar" alt="">{{ card.startDate | date: 'MMMM d' }} - {{ card.endDate | date: 'MMMM d' }}</p>

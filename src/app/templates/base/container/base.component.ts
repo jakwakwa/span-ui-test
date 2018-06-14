@@ -19,7 +19,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class BaseComponent implements OnInit {
-  menuState = 'out';
+  // menuState = 'out';
 
   projects: any[];
 
@@ -29,7 +29,7 @@ export class BaseComponent implements OnInit {
     console.log('ngOnInit');
     this.projects = [
       {
-        logo: '/images/logos/logo1.png',
+        logo: 'assets/img/alta-logo.png',
         'startDate': '2018-03-01',
         'endDate': '2018-05-30',
         'customer': 'Alta Motors',
@@ -41,7 +41,7 @@ export class BaseComponent implements OnInit {
         'tasksTotal': 8
       },
       {
-        'logo': '/images/logos/logo2.png',
+        'logo': 'assets/img/dwell-logo.png',
         'startDate': '2018-04-01',
         'endDate': '2018-05-30',
         'customer': 'Dwell',
@@ -53,7 +53,7 @@ export class BaseComponent implements OnInit {
         'tasksTotal': 6
       },
       {
-        'logo': '/images/logos/logo3.png',
+        'logo': 'assets/img/here-logo.png',
         'startDate': '2018-04-01',
         'endDate': '2018-05-30',
         'customer': 'Here',
@@ -65,7 +65,7 @@ export class BaseComponent implements OnInit {
         'tasksTotal': 10
       },
       {
-        'logo': '/images/logos/logo4.png',
+        'logo': 'assets/img/rms-logo.png',
         'startDate': '2018-04-01',
         'endDate': '2018-05-30',
         'customer': 'RMS',
