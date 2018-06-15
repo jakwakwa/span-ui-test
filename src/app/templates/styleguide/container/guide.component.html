@@ -1,2 +1,105 @@
-Guide Works!
-<a routerLink="/">go home</a>
+<div class="header">
+  <div class="header__container">
+    <a routerLink="/">Back</a>
+  </div>
+</div>
+
+<div class="guide">
+  <div class="guide__container">
+
+    <h1>Style Guide:</h1>
+
+    <hr>
+
+    <div class="corpID">
+      <h2 class="title">Corporate Identity.</h2>
+      <div class="corpID__container">
+        <div class="logo-container">
+          <img class="logo-desktop" [src]="logo" alt="Logo for Desktop">
+          <p class="font-weight">Logo for Desktop</p>
+        </div>
+        <div class="logo-container">
+          <img class="logo-mobile" [src]="logo" alt="Logo for Mobile and Tablets">
+          <p class="font-weight">Logo for Mobile</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="color">
+      <h2 class="title">Colour Schema.</h2>
+      <div class="color__container">
+        <div class="color__box">
+          <div class="color3">
+          </div>
+          <p class="p-regular space-right">Electric Violet</p>
+          <p class="p-light">#7223FF</p>
+        </div>
+        <div class="color__box">
+          <!-- Yellow -->
+          <div class="color2">
+          </div>
+          <p class="p-regular space-right">Golden Tainoi</p>
+          <p class="p-light">#FFC552</p>
+        </div>
+        <div class="color__box">
+          <!-- Pink -->
+          <div class="color4">
+          </div>
+          <p class="p-regular space-right">Radical Red</p>
+          <p class="p-light">#FF2C68</p>
+        </div>
+        <div class="color__box">
+          <!-- Dark Grey -->
+          <div class="color5">
+          </div>
+          <p class="p-regular space-right">Trout</p>
+          <p class="p-light">#474858</p>
+        </div>
+        <div class="color__box">
+          <!-- Grey -->
+          <div class="color1">
+          </div>
+          <p class="p-regular space-right">Comet</p>
+          <p class="p-light">#535572</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="typography">
+      <h2 class="title">Typography.</h2>
+      <div class="typography__container">
+        <div class="type-group">
+          <p class="mont-bold">Montserrat</p>
+          <p class="font-weight">Bold / 700</p>
+        </div>
+        <div class="type-group">
+          <p class="mont-medium">Montserrat</p>
+          <p class="font-weight">Medium / 500</p>
+        </div>
+        <div class="type-group">
+          <p class="roboto-medium">Roboto</p>
+          <p class="font-weight">Regular / 400</p>
+        </div>
+        <div class="type-group">
+          <p class="roboto-light">Roboto</p>
+          <p class="font-weight">Light / 300</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="iconography">
+      <h2 class="title">Iconography.</h2>
+      <div class="iconography__container">
+        <div class="icon-group">
+          <img class="icon-size" [src]="envelope" alt="">
+          <p class="font-weight">Envelope Icon | 16 X 16</p>
+        </div>
+        <div class="icon-group">
+          <img class="icon-size" [src]="calendar" alt="">
+          <p class="font-weight">Calendar Icon</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

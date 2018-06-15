@@ -12,7 +12,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'base',
     // add 'base' to path after work complete
     component: BaseComponent
   }
