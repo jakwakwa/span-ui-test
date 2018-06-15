@@ -7,7 +7,6 @@ import { GuideComponent } from './container/guide.component';
 const routes: Routes = [
   {
     path: 'guide',
-    // 'guide'
     component: GuideComponent
   }
 ];
